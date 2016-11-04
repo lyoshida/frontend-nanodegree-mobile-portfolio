@@ -78,6 +78,9 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
   * Resized pizzaria.jpg to a smaller resolution.
   * Added gulp to minify html, css, js and optimize images. Build files will be placed in the `build` directory.
 
+#### Changes to main.js
+
+  * function updatePositions: Moved `document.body.scrollTop / 1250` outside the loop.
 
 ### Instructions
 
