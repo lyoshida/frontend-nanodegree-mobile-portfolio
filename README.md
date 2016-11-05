@@ -77,6 +77,9 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
   * Added .gitignore
   * Resized pizzaria.jpg to a smaller resolution.
   * Added gulp to minify html, css, js and optimize images. Build files will be placed in the `build` directory.
+  * Added inline critical CSS to the head and moved render blocking CSS and JS to the bottom of the body tag.
+  * Added async attribute to GA scripts
+  * Using script to load Google Font
 
 #### Changes to main.js
 
