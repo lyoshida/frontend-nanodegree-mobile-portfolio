@@ -6,17 +6,17 @@ var cleanCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
 
 
-var baseDir = 'views/'
+// var baseDir = ''
 var destDir = 'build/'
 var paths = {
-  'htmlSrc': baseDir + '**/*.html',
+  'htmlSrc': ['index.html'],
   'htmlDest': destDir,
-  'jsSrc': baseDir + '**/*.js',
-  'jsDest': destDir,
-  'cssSrc': baseDir + '**/*.css',
-  'cssDest': destDir,
-  'imgSrc': [baseDir + 'images/*.png', baseDir + 'images/*.jpg'],
-  'imgDest': destDir + 'images'
+  'jsSrc': ['js/**/*.js'],
+  'jsDest': destDir + 'js',
+  'cssSrc': ['css/**/*.css'],
+  'cssDest': destDir + 'css',
+  'imgSrc': ['img/**/*'],
+  'imgDest': destDir + 'img'
 }
 
 /* Minify html */

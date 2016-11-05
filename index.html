@@ -7,13 +7,45 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Critical CSS -->
+    <style>
+      html {
+        font-size: 100%;
+        overflow-y: scroll;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: none;
+      }
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
+      body {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.61;
+        font-weight: 400;
+      }
 
-    <script>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        color: #333;
+      }
+
+      pre {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      @media only screen and (max-width: 480px) {
+        body {
+          font-size: 12px;
+        }
+      }
+
+    </style>
+
+    <script async>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
 
@@ -21,8 +53,8 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.js"></script>
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
+
   </head>
 
   <body>
@@ -67,5 +99,19 @@
     <footer>
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ['Open Sans']
+        }
+      });
+    </script>
+    <!-- Moved non-critical css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet">
+
+
   </body>
 </html>

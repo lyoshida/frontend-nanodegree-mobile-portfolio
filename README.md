@@ -81,6 +81,10 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 #### Changes to main.js
 
   * function updatePositions: Moved `document.body.scrollTop / 1250` outside the loop.
+  * Replaced `document.querySelector` and `document.querySelectorAll` with `document.getElementById` and `document.getElementsByClassName`, respectively.
+  * Changes to `changePizzaSizes` function: improved for loop syntax (`for (var i = 0, len=document.getElementsByClassName("randomPizzaContainer").length; i < len ; i++) {`); moved `dx` and `newwidth` declarations outside of the loop; created the `randomPizzaContainer` to prevent unnecessary work.
+  * Lines 538-549: Moved `document.getElementById('movingPizzas1')` outside the loop
+
 
 ### Instructions
 
